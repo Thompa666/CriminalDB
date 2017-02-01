@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>STAR SCREENING</h1>
+    <h3>National Crime Database Search</h3>
+    <p class="top-buffer small text-justify">
+        The national criminal search includes records from a number of multi-jurisdictional sources throughout the United States including County Courts, Circuit Courts, Magisterial Courts, Administrative Office of the Courts (AOC), Department of Corrections (DOC), Department of Public Safety (DPS) and State Policing Agencies. The databases include court records, incarceration records, inmate and prison records, probation information, parole information, release information, wants and warrants, arrest records, and other records.
+    </p>
+</div>
+<div class="row top-buffer text-center">
+    <a href="@Url.Action("Index", "Search")" class="btn btn-primary btn-lg">Start Your Search Now!</a>
+</div>
+<div class="row top-buffer">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <h3>How to use this service:</h3>
+        <ol class="round">
+            <li class="one">
+                <h4>Register</h4>
+                <p>If this is the first time you visit Star Screening, we recommend you to register your self to get started with quering the national criminal database. You can register from @Html.ActionLink("here..", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</p>
+            </li>
+
+            <li class="two">
+                <h4>Log In</h4>
+                <p>If you have already have registed with us, now it's time to log into our site. You can do that from @Html.ActionLink("here..", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</p>
+            </li>
+
+            <li class="three">
+                <h4>Search</h4>
+                <p>It's time for you to provide your search criterias to start querying the national criminal database. You can continue doing that from @Html.ActionLink("here..", "Index", "Search") Once you submit your query successfully, you will get your search results as an email.</p>
+            </li>
+        </ol>
+    </div>
+</div>

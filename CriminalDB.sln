@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.DomainModels", "CriminalDB.DomainModels\CriminalDB.DomainModels.csproj", "{C9DCC8D3-99F2-4B79-82F0-7FA751CDBB70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.BusinessLogic", "CriminalDB.BusinessLogic\CriminalDB.BusinessLogic.csproj", "{72E1E287-6562-4642-BE0B-DC4BD60FB075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.DataAccess", "CriminalDB.DataAccess\CriminalDB.DataAccess.csproj", "{70F4445E-BFC6-41D5-924D-6074ACBE772D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F2A45BE9-737D-4D69-8DDF-9EBBEAA08318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{E9A9C584-30C5-4A98-9621-92E322AB8341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.DataAccess.Tests", "CriminalDB.DataAccess.Tests\CriminalDB.DataAccess.Tests.csproj", "{14409483-F598-4A0B-9D02-E902205AC29A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.BusinessLogic.Tests", "CriminalDB.BusinessLogic.Tests\CriminalDB.BusinessLogic.Tests.csproj", "{F1C9129B-2676-41F9-8B29-EE779E8B2C4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.Service.Tests", "CriminalDB.WcfService.Tests\CriminalDB.Service.Tests.csproj", "{5A0835FF-01D5-48B1-A8D6-B0D11D766494}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{DE6FD931-1B61-4B23-8FD8-EFCDC1CD3125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.Service.Integration.Tests", "CriminalDB.WcfService.Integration.Tests\CriminalDB.Service.Integration.Tests.csproj", "{087D4CE4-9785-4961-A3B8-67D497D9AD68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.Services", "CriminalDB.Services\CriminalDB.Services.csproj", "{BDD14759-9079-40D1-A9D0-E50B1A5B1A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.Web", "CriminalDB.Web\CriminalDB.Web.csproj", "{6E17EE98-50DF-437C-A15E-9EA3D7C1A5BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97} = {BDD14759-9079-40D1-A9D0-E50B1A5B1A97}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriminalDB.Web.Tests", "CriminalDB.Web.Tests\CriminalDB.Web.Tests.csproj", "{FC9AD114-3833-45C7-B3D9-3F752023502A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97} = {BDD14759-9079-40D1-A9D0-E50B1A5B1A97}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9DCC8D3-99F2-4B79-82F0-7FA751CDBB70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DCC8D3-99F2-4B79-82F0-7FA751CDBB70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DCC8D3-99F2-4B79-82F0-7FA751CDBB70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DCC8D3-99F2-4B79-82F0-7FA751CDBB70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E1E287-6562-4642-BE0B-DC4BD60FB075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E1E287-6562-4642-BE0B-DC4BD60FB075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E1E287-6562-4642-BE0B-DC4BD60FB075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E1E287-6562-4642-BE0B-DC4BD60FB075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F4445E-BFC6-41D5-924D-6074ACBE772D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F4445E-BFC6-41D5-924D-6074ACBE772D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F4445E-BFC6-41D5-924D-6074ACBE772D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F4445E-BFC6-41D5-924D-6074ACBE772D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14409483-F598-4A0B-9D02-E902205AC29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14409483-F598-4A0B-9D02-E902205AC29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14409483-F598-4A0B-9D02-E902205AC29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14409483-F598-4A0B-9D02-E902205AC29A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C9129B-2676-41F9-8B29-EE779E8B2C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C9129B-2676-41F9-8B29-EE779E8B2C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C9129B-2676-41F9-8B29-EE779E8B2C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C9129B-2676-41F9-8B29-EE779E8B2C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0835FF-01D5-48B1-A8D6-B0D11D766494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0835FF-01D5-48B1-A8D6-B0D11D766494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0835FF-01D5-48B1-A8D6-B0D11D766494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0835FF-01D5-48B1-A8D6-B0D11D766494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087D4CE4-9785-4961-A3B8-67D497D9AD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087D4CE4-9785-4961-A3B8-67D497D9AD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087D4CE4-9785-4961-A3B8-67D497D9AD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087D4CE4-9785-4961-A3B8-67D497D9AD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD14759-9079-40D1-A9D0-E50B1A5B1A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E17EE98-50DF-437C-A15E-9EA3D7C1A5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E17EE98-50DF-437C-A15E-9EA3D7C1A5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E17EE98-50DF-437C-A15E-9EA3D7C1A5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E17EE98-50DF-437C-A15E-9EA3D7C1A5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9AD114-3833-45C7-B3D9-3F752023502A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9AD114-3833-45C7-B3D9-3F752023502A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9AD114-3833-45C7-B3D9-3F752023502A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9AD114-3833-45C7-B3D9-3F752023502A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9A9C584-30C5-4A98-9621-92E322AB8341} = {F2A45BE9-737D-4D69-8DDF-9EBBEAA08318}
+		{14409483-F598-4A0B-9D02-E902205AC29A} = {E9A9C584-30C5-4A98-9621-92E322AB8341}
+		{F1C9129B-2676-41F9-8B29-EE779E8B2C4D} = {E9A9C584-30C5-4A98-9621-92E322AB8341}
+		{5A0835FF-01D5-48B1-A8D6-B0D11D766494} = {E9A9C584-30C5-4A98-9621-92E322AB8341}
+		{DE6FD931-1B61-4B23-8FD8-EFCDC1CD3125} = {F2A45BE9-737D-4D69-8DDF-9EBBEAA08318}
+		{087D4CE4-9785-4961-A3B8-67D497D9AD68} = {DE6FD931-1B61-4B23-8FD8-EFCDC1CD3125}
+		{FC9AD114-3833-45C7-B3D9-3F752023502A} = {E9A9C584-30C5-4A98-9621-92E322AB8341}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
